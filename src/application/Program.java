@@ -30,7 +30,7 @@ public class Program {
 		}
 		
 
-	/*	System.out.println("\n+++ TEST 3 FINDALL +++");
+		System.out.println("\n+++ TEST 3 FINDALL +++");
 		
 		list = sellerDao.findAll();
 		
@@ -38,16 +38,20 @@ public class Program {
 			System.out.println(obj);
 			
 		}
-		System.out.println("\n+++ TEST 4 INSERT +++");
+	/*	System.out.println("\n+++ TEST 4 INSERT +++");
 		Seller nSeller = new Seller(null,"Greg","greg@gmail.com",new Date(), 4000.0, department);
 		sellerDao.insert(nSeller);
-		System.out.println("Inserted! New id = "+ nSeller.getId());*/
+		System.out.println("Inserted! New id = "+ nSeller.getId());
 		
-		System.out.println("\n+++ TEST 4 INSERT +++");
+		System.out.println("\n+++ TEST 5 UPDATE +++");
 		seller = sellerDao.findById(1);
 		seller.setName("Martha Waine");
 		sellerDao.update(seller);
-		System.out.println("Updated complet!");
+		System.out.println("Updated complet!"); */
+		
+		System.out.println("\n+++ TEST 6 DELETE +++");
+		sellerDao.deletById(10);
+		System.out.println("\n Sucessfull");
 	}	
 
 }
